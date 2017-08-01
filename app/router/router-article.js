@@ -8,3 +8,5 @@ module.exports = function (app) {
 
 router.get('/', ArticleController.index);
 router.post('/', ArticleController.newArticles);
+router.put('/:id', ArticleController.editArticle);
+router.delete('/:id', ArticleController.deleteArticle);
